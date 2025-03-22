@@ -1,0 +1,15 @@
+C:\Users\josep\OneDrive\Desktop\Code\Data Stucturezs\Final Project\musicApp\bin\Debug\net8.0\musicApp.exe
+C:\Users\josep\OneDrive\Desktop\Code\Data Stucturezs\Final Project\musicApp\bin\Debug\net8.0\musicApp.deps.json
+C:\Users\josep\OneDrive\Desktop\Code\Data Stucturezs\Final Project\musicApp\bin\Debug\net8.0\musicApp.runtimeconfig.json
+C:\Users\josep\OneDrive\Desktop\Code\Data Stucturezs\Final Project\musicApp\bin\Debug\net8.0\musicApp.dll
+C:\Users\josep\OneDrive\Desktop\Code\Data Stucturezs\Final Project\musicApp\bin\Debug\net8.0\musicApp.pdb
+C:\Users\josep\OneDrive\Desktop\Code\Data Stucturezs\Final Project\musicApp\obj\Debug\net8.0\musicApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josep\OneDrive\Desktop\Code\Data Stucturezs\Final Project\musicApp\obj\Debug\net8.0\musicApp.AssemblyInfoInputs.cache
+C:\Users\josep\OneDrive\Desktop\Code\Data Stucturezs\Final Project\musicApp\obj\Debug\net8.0\musicApp.AssemblyInfo.cs
+C:\Users\josep\OneDrive\Desktop\Code\Data Stucturezs\Final Project\musicApp\obj\Debug\net8.0\musicApp.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\Desktop\Code\Data Stucturezs\Final Project\musicApp\obj\Debug\net8.0\musicApp.sourcelink.json
+C:\Users\josep\OneDrive\Desktop\Code\Data Stucturezs\Final Project\musicApp\obj\Debug\net8.0\musicApp.dll
+C:\Users\josep\OneDrive\Desktop\Code\Data Stucturezs\Final Project\musicApp\obj\Debug\net8.0\refint\musicApp.dll
+C:\Users\josep\OneDrive\Desktop\Code\Data Stucturezs\Final Project\musicApp\obj\Debug\net8.0\musicApp.pdb
+C:\Users\josep\OneDrive\Desktop\Code\Data Stucturezs\Final Project\musicApp\obj\Debug\net8.0\musicApp.genruntimeconfig.cache
+C:\Users\josep\OneDrive\Desktop\Code\Data Stucturezs\Final Project\musicApp\obj\Debug\net8.0\ref\musicApp.dll
