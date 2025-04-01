@@ -1,8 +1,8 @@
 public class Playlist
 {
-    public string Name;
+    public string? Name;
 
-    public LinkedList<Song> songs = new LinkedList<Song>();
+    public LinkedList<Song>? songs = new LinkedList<Song>();
 
     public Playlist(string name)
     {
@@ -11,16 +11,16 @@ public class Playlist
 
     public void AddSong(Song song)
     {
-        if (songs.Find(song) == null)
+        if (songs?.Find(song) == null)
         {
-            songs.AddLast(song);
+            songs?.AddLast(song);
             Console.WriteLine("Song added");
         }
     }
 
     public void RemoveSong(Song song)
     {
-        if (songs.Find(song) != null)
+        if (songs?.Find(song) != null)
         {
             songs.Remove(song);
             Console.WriteLine("Song removed");
@@ -33,7 +33,7 @@ public class Playlist
 
     public void MoveSong(Song song, Song location)
     {
-        if (songs.Find(song) != null)
+        if (songs?.Find(song) != null)
         {
             songs.Remove(song);
             LinkedListNode<Song>? currentNode;
@@ -55,7 +55,7 @@ public class Playlist
 
     public void CopySongTo(Song song, Playlist playlist)
     {
-        if (songs.Find(song) != null)
+        if (songs?.Find(song) != null)
         {
             playlist.AddSong(song);
         }
@@ -64,7 +64,7 @@ public class Playlist
     public void Display()
     {
         
-        if (songs.First != null)
+        if (songs?.First != null)
         {
             foreach (Song song in songs)
             {
@@ -79,7 +79,7 @@ public class Playlist
 
     public void Delete()
     {
-        songs.Clear();
+        songs?.Clear();
         songs = null;
         Name = null;
     }
