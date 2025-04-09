@@ -1,16 +1,24 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Security.Cryptography.X509Certificates;
 
 public struct Song
 {
-    public string Title;
-    public string Artist;
+    public string? Title;
+    public string? Artist;
     public int Length;
 
-    public Song(string title, string artist, int length)
+    public Song(string title, string artist, int length = 0)
     {
-        Title = title;
-        Artist = artist;
-        Length = length;
+        if (title == null && artist == null)
+        {
+            Console.WriteLine("No song detected.");
+        }
+        else
+        {
+            Title = title;
+            Artist = artist;
+            Length = length;
+        }
     }
 
     public override string ToString()

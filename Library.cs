@@ -1,6 +1,5 @@
 public class Library
 {
-
     public LinkedList<Playlist> playlists = new LinkedList<Playlist>();
 
     public void AddPlaylist(Playlist playlist)

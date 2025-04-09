@@ -1,10 +1,48 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using musicApp;
 
+List<Song> database = Database.DatabaseSongs;
 Setup.setup();
 Library library = new Library();
 
 
+// Stack Testing
+/*
+Console.WriteLine($"Setup song: {Setup.activeSong}");
+
+stackSolutions.runSong(Setup.activeSong, ref Setup.runTime, ref Setup.songFinished);
+
+stackSolutions.AddLastPlayed(Setup.lastPlayed, ref Setup.activeSong, ref Setup.songFinished, Setup.nextUp);
+
+Console.WriteLine("Last Played List: ");
+foreach (var item in Setup.lastPlayed)
+{
+    Console.WriteLine(item);
+}
+Console.WriteLine("");
+
+Setup.runTime = 15;
+Console.WriteLine("Runtime Changed");
+Console.WriteLine($"Current Active: {Setup.activeSong}");
+Console.WriteLine("");
+
+Setup.buttonPressed = ("Previous", 1);
+stackSolutions.RestartSong(Setup.buttonPressed, ref Setup.runTime, Setup.activeSong);
+
+
+Console.WriteLine("Previous song");
+Setup.buttonPressed = ("Previous", 2);
+stackSolutions.PreviousSong(Setup.buttonPressed, ref Setup.runTime, ref Setup.activeSong, Setup.lastPlayed, Setup.nextUp);
+
+Console.WriteLine("Previous song again");
+Console.WriteLine("");
+Setup.buttonPressed = ("Previous", 3);
+stackSolutions.PreviousSong(Setup.buttonPressed, ref Setup.runTime, ref Setup.activeSong, Setup.lastPlayed, Setup.nextUp);
+*/
+
+
+
+/*
 //Linked List Testing
 //Basic Playlist Functionality
 Console.WriteLine("Creating");
@@ -79,43 +117,71 @@ Console.WriteLine();
 Console.WriteLine("Moving Playlist");
 library.MovePlaylist(HatedSongs, playlist3);
 library.Display();
-
-
-
-
-
-
-// Stack Testing
-/*
-Console.WriteLine($"Setup song: {Setup.activeSong}");
-
-stackSolutions.runSong(Setup.activeSong, ref Setup.runTime, ref Setup.songFinished);
-
-stackSolutions.AddLastPlayed(Setup.lastPlayed, ref Setup.activeSong, ref Setup.songFinished, Setup.nextUp);
-
-Console.WriteLine("Last Played List: ");
-foreach (var item in Setup.lastPlayed)
-{
-    Console.WriteLine(item);
-}
-Console.WriteLine("");
-
-Setup.runTime = 15;
-Console.WriteLine("Runtime Changed");
-Console.WriteLine($"Current Active: {Setup.activeSong}");
-Console.WriteLine("");
-
-Setup.buttonPressed = ("Previous", 1);
-stackSolutions.RestartSong(Setup.buttonPressed, ref Setup.runTime, Setup.activeSong);
-
-
-Console.WriteLine("Previous song");
-Setup.buttonPressed = ("Previous", 2);
-stackSolutions.PreviousSong(Setup.buttonPressed, ref Setup.runTime, ref Setup.activeSong, Setup.lastPlayed, Setup.nextUp);
-
-Console.WriteLine("Previous song again");
-Console.WriteLine("");
-Setup.buttonPressed = ("Previous", 3);
-stackSolutions.PreviousSong(Setup.buttonPressed, ref Setup.runTime, ref Setup.activeSong, Setup.lastPlayed, Setup.nextUp);
 */
+
+
+/*
+//Tree Testing
+//Tree Creation
+BinarySearchTree titleTree = new BinarySearchTree();
+BinarySearchTree artistTree = new BinarySearchTree();
+
+Console.WriteLine("Title Tree:");
+titleTree.Display("title");
+Console.WriteLine();
+
+//Add to and display songs in order
+foreach(Song song in database)
+{
+    titleTree.InsertTitle(song);
+    //Console.Write("Added song: ");
+    //Console.WriteLine(song);
+}
+
+Console.WriteLine();
+Console.WriteLine("Title Tree:");
+titleTree.Display("title");
+Console.WriteLine();
+Console.WriteLine();
+
+//Artist Tree
+Console.WriteLine("Artist Tree:");
+artistTree.Display("artist");
+Console.WriteLine();
+
+foreach (Song song in database)
+{
+    artistTree.InsertArtist(song);
+    //Console.WriteLine($"Added artist: ", song.Artist);
+}
+
+Console.WriteLine("Artist Tree:");
+artistTree.Display("artist");
+Console.WriteLine();
+Console.WriteLine();
+
+Console.WriteLine("All Details: ");
+titleTree.Display("all");
+Console.WriteLine();
+Console.WriteLine();
+
+//Searching
+string? input = "";
+Console.WriteLine("Press ` to quit.");
+while (input != "`")
+{
+    Console.Write("Search: ");
+    input = Console.ReadLine();
+    titleTree.SearchDatabase(input);
+
+    Console.WriteLine();
+    Console.WriteLine();
+
+    artistTree.SearchDatabase(input);
+    Console.WriteLine();
+}
+*/
+
+
+
 
